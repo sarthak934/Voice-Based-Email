@@ -1,2 +1,15 @@
 # Voice-Based-Email
-VocaMail is a voice-activated email automation system that allows users to send emails by simply speaking. Powered by Amazon Lex, AWS Lambda, and Amazon SES, it provides a seamless, hands-free way to communicate through email.
+
+Final System Flow – Key Steps:
+
+1. User speaks: “Send email to john@example.com.”
+
+2. Amazon Lex detects intent and extracts slots: Recipient, Subject, MessageBody.
+
+3. Lex passes data to AWS Lambda for processing.
+
+4. Lambda formats and sends the email using Amazon SES.
+
+5. Lambda returns response to Lex.
+
+6. Lex responds to user: “Email sent successfully.”
